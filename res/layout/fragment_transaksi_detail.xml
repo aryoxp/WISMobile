@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/noTransaksiDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="10dp"
+        android:text="Transaksi #019283"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tanggalTransaksiDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="01/02/2013" />
+
+        <TextView
+            android:id="@+id/nominalTransaksiDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp.100.000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_light"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/namaAkunDebitTransaksiDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Biaya Pasar" />
+
+        <TextView
+            android:id="@+id/keteranganTransaksiDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Keterangan"
+            android:textColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/namaAkunKreditTransaksiDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kas Besar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/namaUserTransaksiDetailText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/buttonOKTransaksiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_selector"
+        android:textColor="@drawable/button_text_selector"
+        android:padding="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="OK" />
+
+</LinearLayout>

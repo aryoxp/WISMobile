@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WIS Accounting Mobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+	<string name="newStr">New</string>
+	
+	<string name="pref_settings_title">Settings</string>
+	<string name="pref_server_configuration">Server Configuration</string>
+	<string name="pref_ip_address">Server IP Address</string>
+	<string name="pref_ip_address_description">Server IP address used as application web services.</string>
+	
+	<string name="dummy_text">Dummy Text</string>
+	<string name="pengeluaran">Pengeluaran</string>
+	<string name="blank">"           "</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transaksiContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_selector" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/itemTransaksiContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_bg_selector"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/akunInfoContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/namaAkun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/dummy_text" />
+
+                    <TextView
+                        android:id="@+id/keteranganAkun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/dummy_text"
+                        android:textColor="#777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kreditContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tanggalTransaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="101" />
+
+                    <TextView
+                        android:id="@+id/textNominal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/akunInfoContainer"
+                        android:text="Rp. 100.000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/akunDebit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="102"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/akunKredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="501"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/buttonDeleteItemTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@drawable/button_bg_selector"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_navigation_cancel" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
